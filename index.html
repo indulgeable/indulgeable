@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indulge</title>
+
+    <!--  
+        오픈 그래프 (The  Open Graph protocol)
+        :웹페이지가 소설 미디어로 공유될 때 우선적으로 활용되는 정보를 지정
+
+        og:type: 페이지의 유형(website,video,movie,blog,cage etc..)
+        og:site_name : 속한 사이트의 이름
+        og:title : 페이지의 이름(제목)
+        og:descrpiotion : 페이지의 가단 한 설명
+        og:image : 페이지의 대표 이미지 주소(url)
+        og:url : 페이지의 주소(url)
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="starbucks" />
+    <meta property="og:title" content="starbucks web site" />
+    <meta property="og:description" content="스타벅스 커피 코리아" />
+    <meta property="og:image" content="./imges/starbucks_seo.jpg" />
+    <meta property="og:url" content="www.aaa.co.kr" />
+
+    <!--   트위터 카드(Twitter Cards)
+
+    : 웹페이지가 소셜 미디어(트위터)로 공유될 때 우선적으로 활용되는 정보를 지정합니다.  -->
+
+
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="Starbucks" />
+    <meta property="twitter:title" content="Starbucks Coffee Korea" />
+    <meta property="twitter:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
+    <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+    <meta property="twitter:url" content="https://starbucks.co.kr" />
+
+
+    <!-- 
+        Favicon(파비콘, favorites icon)
+        : 웹페이지를 나타내는 아이콘, 웹페이지 로고를 설명
+        : favicon.png 파일을 사용하려면 다음과 같이 <link />를 작성해야함.
+        :<link rel="icon" herf="./favicon.png">
+
+        :favicon.ico 파일을 사용하려면
+        :favicon 이미지가 루트 경로에 있으면 됨.
+
+        .ico 파일 제작
+        : 이미지를 업르드하면 손쉽게 .ico 파일을 제작 할 수 있음
+
+        <.ico 파일 제작 사이트>
+        iconifier.net
+
+    -->
+    <!-- <link rel="icon" href="./favicon.png"> -->
+
+    <!--  
+            css 초기화 
+            구글 검색 : reset.css cdn 검색
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+    <!--  
+            글꼴
+            구글검색 : google font
+            :나눔고딕 (Nanum Gothic)
+
+            아이콘
+            구글 아이콘
+    -->
+    <!-- 글꼴 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <!-- 아이콘 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+
+
+
+
+    <!-- lodash cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- swiper cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+        integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+    <!-- 웹폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <!-- 아이콘 -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+       <!-- scrollPlugin -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollToPlugin.min.js" integrity="sha512-uLq4Xf3PvaO+NTghyBWeh43DxozRnHMM2vcwlxY+KVc7xv2PMLimAerptg7AbrdN2qZjAwExwV/IqGm4YQBPww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    
+
+    <!-- youtube -->
+    <script defer src="./js/youtube.js"></script>  
+    <!-- <script defer src="./js/youtube1.js"></script>              -->
+
+    <link rel="icon" href="./iconified/apple-touch-icon-180x180.png">
+
+
+    <link rel="stylesheet" href="./css/indulge.css">
+
+    <script defer src="./indulge.js"></script>
+</head>
+
+<body>
+    
+  
+    <header>
+        <!-- 로고 -->
+        <a href="./main/index.html" class="logo"><img src="./iconified/apple-touch-icon-57x57.png" alt="logo"></a>
+        <ul class="menu">
+            <li><a href="#">소개</a>
+                <ul class="submenu">
+                    <li><a href="#">개요</a></li>
+                    <li><a href="#">구성</a></li>
+                    <li><a href="#">지도</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">행사</a>
+                <ul class="submenu">
+                    <li><a href="#">시간표</a></li>
+                    <li><a href="#">라인업</a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="#">참여</a>
+                <ul class="submenu">
+                    <li><a href="#">티켓</a></li>
+                    <li><a href="#">코스프레</a></li>
+                    <li><a href="#">부스</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">콜라보</a>
+                <ul class="submenu">
+                    <li><a href="#">굿즈</a></li>
+                    <li><a href="#">카페</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">커뮤니티</a>
+                <ul class="submenu">
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">유저게시판</a></li>
+                    <li><a href="#">sns</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <section class="txt">
+        <div><h4>내가 좋아하는 <br> <em>애니메이션</em> </h4></div>
+    </section>
+
+    <section class="txt1">
+        <div><h4>가슴을 울리는 ost. </h4></div>
+    </section>
+
+    <section class="txt2">
+        <div><h4>현장감있게</h4></div>
+    </section>
+    
+
+    <section class="youtube">
+        <div class="youtube__area">
+            <div id="player"></div>
+        
+
+        </div>
+    </section>
+
+    <section class="youtube">
+        <div class="youtube__area">
+            <div id="player1"></div>
+        </div>
+    </section>
+
+    <section class="youtube">
+        <div class="youtube__area">
+            <div id="player2"></div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- TO TOP button -->
+    <div id="to-top">
+        <div class="material-symbols-outlined">arrow_upward</div>
+    </div>
+
+
+</body>
+
+</html>
